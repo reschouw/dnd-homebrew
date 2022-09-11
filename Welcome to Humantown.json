@@ -1,0 +1,460 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WelcometoHumantown",
+				"abbreviation": "WTH",
+				"full": "Welcome to Humantown",
+				"url": "https://www.gmbinder.com/share/-MWSQOLb7C4BmeuZrRJq",
+				"authors": [
+					"oscarduretto"
+				],
+				"convertedBy": [
+					"reschouw"
+				]
+			}
+		]
+	},
+	"monster": [
+		{
+			"name": "Humantown Denizen",
+			"source": "WelcometoHumantown",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": "ooze",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				9
+			],
+			"hp": {
+				"average": 22,
+				"formula": "4d8 + 4"
+			},
+			"speed": {
+				"walk": {
+					"number": 30,
+					"condition": "climb 30 ft."
+				}
+			},
+			"str": 14,
+			"dex": 8,
+			"con": 15,
+			"int": 5,
+			"wis": 6,
+			"cha": 3,
+			"senses": [
+				"blindsight 60 ft. (blind beyond this radius)"
+			],
+			"passive": 8,
+			"resist": [
+				"acid"
+			],
+			"immune": [
+				"lightning",
+				"slashing"
+			],
+			"conditionImmune": [
+				"blinded",
+				"deafened",
+				"exhaustion"
+			],
+			"languages": [
+				"Common and Halfling"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"The slime can use its action to polymorph into a medium human, or back into its true form. Its statistics are the same in each form.",
+						"Equipment it is carrying does not transform, however the humanoid form is always clothed. It reverts to its true form when it dies."
+					]
+				},
+				{
+					"name": "Amorphous",
+					"entries": [
+						"The slime can move through a space as narrow as 1 inch wide without squeezing.",
+						"Absolute obliviousness. The slime has advantage against charm and fear effects."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The slime can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Pseudopod",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 2}) acid damage"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Split",
+					"entries": [
+						"When a slime that is subjected to lightning or slashing damage, it splits into two new slimes if it has at least 4 hit points. Each new slime has hit points equal to half the original slime's, rounded down. New slimes are one size smaller than the original slime. The damage of their attacks is reduced as they reduce in size.",
+						"If small: pseudopod deals {@dice 1d4 + 2} acid.",
+						"If tiny: pseudopod deals 3 acid damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Amorphous",
+				"Shapechanger",
+				"Spider Climb"
+			],
+			"senseTags": [
+				"B"
+			],
+			"languageTags": [
+				"C",
+				"H"
+			],
+			"damageTags": [
+				"A"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Alistair",
+			"isNamedCreature": true,
+			"source": "WelcometoHumantown",
+			"page": 0,
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"halfling"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 49,
+				"formula": "9d8 + 9"
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 13,
+			"int": 17,
+			"wis": 10,
+			"cha": 11,
+			"save": {
+				"int": "+6",
+				"wis": "+3"
+			},
+			"skill": {
+				"arcana": "+6",
+				"religion": "+6"
+			},
+			"passive": 10,
+			"languages": [
+				"Common",
+				"Halfling",
+				"Primordial",
+				"Celestial"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Alistair is a 7th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). Alistair has the following wizard spells prepared."
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell acid splash}",
+								"{@spell fire bolt}",
+								"{@spell mending}",
+								"{@spell poison spray}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell chromatic orb}",
+								"{@spell grease}*",
+								"{@spell mage armor}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell melf's acid arrow}",
+								"{@spell misty step}*",
+								"{@spell web}*"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell blink}",
+								"{@spell lightning bolt}",
+								"{@spell stinking cloud}*"
+							]
+						},
+						"4": {
+							"slots": 1,
+							"spells": [
+								"{@spell fabricate}"
+							]
+						}
+					},
+					"footerEntries": [
+						"* Conjuration spell of first level or higher Benign Transportation (Recharges after Alistair casts a Conjuration Spell of 1st level or higher). As a bonus action, Alistair teleports up to 30 feet to an unoccupied space that he can see."
+					],
+					"ability": "int"
+				}
+			],
+			"languageTags": [
+				"C",
+				"CE",
+				"H",
+				"P"
+			],
+			"damageTagsSpell": [
+				"A",
+				"C",
+				"F",
+				"I",
+				"L",
+				"T"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"conditionInflictSpell": [
+				"prone",
+				"restrained"
+			]
+		},
+		{
+			"name": "Grommuc's Armor",
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"source": "WelcometoHumantown",
+			"alignment": null,
+			"ac": [
+				{
+					"special": "17"
+				}
+			],
+			"hp": {
+				"special": "100"
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 17,
+			"int": 16,
+			"wis": 16,
+			"cha": 10,
+			"passive": 12,
+			"cr": "4",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"save": {
+				"str": "+7",
+				"con": "+6"
+			},
+			"skill": {
+				"intimidation": "+3",
+				"athletics": "+10",
+				"arcana": "+6"
+			},
+			"vulnerable": [
+				"acid",
+				"lightning"
+			],
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"poison",
+				"slashing"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Grommuc's armor uses a rotating Bracer Drum full of spell-storing iron rods. Instead of traditional spell slots, each iron rod only has one use before it is expelled from the drum with a puff of steam. "
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell acid splash}",
+								"{@spell fire bolt}",
+								"{@spell frostbite|XGE}",
+								"{@spell lightning lure|TCE}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell chaos bolt|XGE}",
+								"{@spell magic missile}",
+								"{@spell ray of sickness}",
+								"{@spell thunderwave}"
+							],
+							"slots": 0
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTagsSpell": [
+				"A",
+				"C",
+				"F",
+				"I",
+				"L",
+				"O",
+				"T",
+				"Y"
+			],
+			"action": [
+				{
+					"name": "Thunder Guantlets",
+					"entries": [
+						"Grommuc's armored fists each count as a simple melee weapon that uses Intelligence instead of Strength or Dexterity, and each deals {@damage 1d8} thunder damage on a hit. A creature hit by the gauntlet has disadvantage on attack rolls against targets other than you until the start of your next turn, as the armor magically emits a distracting pulse when the creature attacks someone else."
+					]
+				}
+			],
+			"actionHeader": [
+				"With Grommuc's advanced armor, he can make two attacks: either one spell attack with his Bracer Drum and one with a Thunder Guantlet, or with both his Thunder Guantlets"
+			],
+			"bonus": [
+				{
+					"name": "Defensive Field",
+					"entries": [
+						"Grommuc's Armor gains a bonus action that he can use on each of his turns to gain {@dice 2d4} hit points equal to your level in this class, replacing any temporary hit points you already have. You lose these temporary hit points if you doff the armor. The defensive field is generated by a bulge on the armor's back, and can be disabled if specifically targeted. "
+					]
+				}
+			],
+			"isNpc": true,
+			"fluff": {
+				"entries": [
+					"Grommuc's Armor is a hulking, cast iron beast of a construct. A purpose-built war machine, designed to take on fields of enemy soldiers who might seek to threaten Azul and his Garden.",
+					"With a massive rotating drum of iron rods used as spell storing items, Grommuc can attack with spells and his gauntlets at the same time, making him a significant threat to any combatant. "
+				]
+			}
+		},
+		{
+			"name": "The Puppet",
+			"size": [
+				"M"
+			],
+			"type": "aberration",
+			"source": "WelcometoHumantown",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"formula": "10d10",
+				"average": 67
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 19,
+			"dex": 19,
+			"con": 19,
+			"int": 19,
+			"wis": 19,
+			"cha": 19,
+			"passive": 15,
+			"cr": "0",
+			"save": {
+				"str": "+6",
+				"dex": "+6",
+				"con": "+6"
+			},
+			"vulnerable": [
+				"cold"
+			],
+			"resist": [
+				"lightning",
+				"necrotic",
+				"psychic",
+				"thunder"
+			],
+			"immune": [
+				"fire"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened"
+			],
+			"reaction": [
+				{
+					"name": "Deflect Missiles",
+					"entries": [
+						"The Puppet can use it's reaction to deflect or catch the missile when it is hit by a ranged weapon attack. When it does so, the damage you take from the attack is reduced by {@dice 1d10 + 3} + it's Dexterity modifier.",
+						"If it reduces the damage to 0, it can catch the missile if it is small enough for it to hold in one hand and it has at least one hand free. If it catches a missile in this way, it can make a ranged attack (range 20/60 feet) with the weapon or piece of ammunition it just caught, as part of the same reaction."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Firey Grapple",
+					"entries": [
+						"The Puppet makes and Attack action to attempt to grab an enemy with it's fiery hands. The Puppet and it's opponent make contesting Strength (Athletics) or Dexterity (Acrobatics) checks, decided by The Puppet. The Puppet succeeds automatically if the target is {@condition incapacitated}. ",
+						"If the Puppet succeeds, and on each of the target's subsequent turns while {@condition grappled}, The Puppet's fire licks at the target, causing {@damage 1d4 + 4} damage. ",
+						"The Puppet can move and carry the {@condition grappled} target with it, but it's movement speed is halved while it does so. "
+					]
+				},
+				{
+					"name": "Unnatural Strike",
+					"entries": [
+						"The Puppet may make and unarmed strike with one hand. This attack. This attack uses it's strength modifier to hit, and does {@dice 1d6} + it's strength modifier bludgeoning damage, and {@damage 1d4} fire damage."
+					]
+				}
+			],
+			"actionHeader": [
+				"While The Puppet will not usually engage in direct combat, it will retaliate if threatened. It can use one of the following attacks."
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"skill": {
+				"acrobatics": "+6",
+				"athletics": "+6",
+				"arcana": "+6"
+			}
+		}
+	]
+}
